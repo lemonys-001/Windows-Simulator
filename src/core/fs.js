@@ -242,7 +242,7 @@ export const fs = {
       const p = getNode(parentPath)
       delete p.children[name]
       p.modified = now()
-      const trashNode = getNode('/$Recycle.Bin') || t.children['$Recycle.Bin']
+      const trashNode = getNode('/$Recycle.Bin') || p.children['$Recycle.Bin']
       trashNode.children[`${name}.${node.id}`] = node
       trashNode.children[`${name}.${node.id}`].deletedFrom = normalize(parentPath)
       trashNode.children[`${name}.${node.id}`].deletedAt = now()
