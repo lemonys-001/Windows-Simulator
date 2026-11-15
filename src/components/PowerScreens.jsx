@@ -20,7 +20,7 @@ export function BootScreen() {
         {LOGO}
         <div className="boot-bar"><div /></div>
       </div>
-      <div className="text-[#9fb7a8] text-[13px] tracking-wide">Starting Windows<span className="ml-2">®</span> Simulator</div>
+      <div className="text-[#8fb0c8] text-[13px] tracking-wide">Starting Windows<span className="ml-2">®</span> Simulator</div>
     </div>
   )
 }
